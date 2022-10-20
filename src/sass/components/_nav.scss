@@ -1,0 +1,21 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+
+#nav {
+    a {
+       font-family: 'Montserrat', sans-serif;
+       font-weight: 400;
+    }
+
+    .basketCounter {
+        border-radius: 100%;
+        width: 1.4rem;
+        height: 1.4rem;
+        background-color: vars.$orange;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0.3rem;
+    }
+}

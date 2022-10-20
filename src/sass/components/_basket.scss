@@ -1,0 +1,142 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+
+
+.basket-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000099;
+    position: fixed;
+    top: 0;
+    padding: 2em;
+    z-index: 21;
+        overflow-y: auto;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+//styling for empty basket
+.empty-basket {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+
+    @include mixins.xs {
+        gap: 1rem;
+    }
+}
+
+.return-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    width: 8rem;
+    height: 3rem;
+    background-color: vars.$green;
+    color: vars.$sdWhite;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+
+    &:hover,
+        :focus {
+            box-shadow: 0 0.6em 0.5em -0.4em vars.$lightgreen;
+            transform: translateY(-0.25em);
+            background-color: vars.$lightgreen;
+            color: vars.$sdBlack;
+        }
+
+    @include mixins.xs {
+        width: 9rem;
+    }
+}
+
+
+
+//order button
+.basket-order-btn {
+    font-family: 'Montserrat', sans-serif;
+    width: 8rem;
+    min-height: 3rem;
+    background-color: vars.$green;
+    color: vars.$white;
+    font-size: 1.1rem;
+    border-radius: 0.2rem;
+
+        &:hover,
+            :focus {
+                box-shadow: 0 0.6em 0.5em -0.4em vars.$lightgreen;
+                transform: translateY(-0.25em);
+                background-color: vars.$lightgreen;
+                color: vars.$sdBlack;
+            }
+}
+
+//close button
+.basket-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    margin: 1rem;
+    background-color: vars.$sdBlack;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    color: vars.$sdWhite;
+    font-size: 1.5rem;
+
+}
+
+}
+
+.basket {
+    background-color: vars.$sdWhite;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100%;
+    z-index: 22;
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    @include mixins.xs {
+            width: 70vw;
+        }
+    
+    @include mixins.sm {
+            width: 50vw;        
+        }
+
+    @include mixins.xl {
+            width: 40vw;
+        }
+.basket-sum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+
+h2 {
+    font-size: 2rem;
+}
+}
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}

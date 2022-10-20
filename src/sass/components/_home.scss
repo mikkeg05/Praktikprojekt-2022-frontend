@@ -1,0 +1,284 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+
+#home-main {
+
+    .cta-btn {
+        font-family: 'Montserrat', sans-serif;
+        color: vars.$white;
+        font-size: 1rem;
+        border-radius: 0.2rem;
+        padding-inline: 1.5rem;
+        padding-block: 0.5rem;
+        width: 8.5rem;
+        font-weight: 500;
+
+        &:hover, :focus {
+                box-shadow: 0 0.6em 0.5em -0.4em vars.$lightgreen;
+                transform: translateY(-0.25em);
+                background-color: vars.$lightgreen;
+                color: vars.$sdBlack;
+            }
+    }
+    .orange {
+&:hover,
+    :focus {
+        box-shadow: 0 0.6em 0.5em -0.4em vars.$lightorange;
+        background-color: vars.$lightorange;
+    }
+
+    }
+}
+
+#home-header{
+    min-height: 100vh;
+    padding-top: 4rem;
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 300;
+    margin-inline: 1rem;
+
+    @include mixins.sm {
+            font-size: 4rem;
+        }
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 300;
+    margin-inline: 1rem;
+    font-style: italic;
+
+    @include mixins.sm {
+            font-size: 1.5rem;
+        }
+}
+
+.home-header-top {
+   /*  min-height: 100%;
+    margin-top: 4rem;
+    position: relative; */
+    position: relative;
+    height: 60vh;
+}
+
+.home-header-btm {
+    min-height: 40vh;
+    background-color: vars.$sdWhite;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-block: 2rem;
+    align-items: center;
+}
+}
+#landing-vid {
+        /* position: relative;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        min-width: 100%;
+        min-height: 100%; */
+        object-fit: cover;
+        width: 100vw;
+        height: 60vh;
+        position: relative;
+        top: 0;
+        left: 0;
+}
+
+.home-first-section {
+    background-color: vars.$sdBlack;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 2rem;
+
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 200;
+        margin-inline: 1rem;
+        color: vars.$sdWhite;
+       
+
+        @include mixins.sm {
+                font-size: 3.5rem;
+            }
+    }
+
+    .howitworks-articles {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-block: 2rem;
+        justify-content: center;
+    }
+
+    .howitworks-article {
+        background: rgb(0, 113, 11);
+        background: linear-gradient(0deg, rgba(0, 113, 11, 1) 0%, rgba(225, 255, 228, 1) 100%);
+        width: 14rem;
+        height: 18rem;
+        border-radius: 2rem;
+        display: grid;
+        margin-top: 2rem;
+    }
+
+    .howitworks-title {
+        background-color: vars.$white;
+        padding: 1rem;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        min-height: 5rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+        }
+    
+
+}
+
+.home-second-section {
+    background-color: vars.$sdWhite;
+    padding-block: 8rem;
+    padding-inline: 1rem;
+    display: grid;
+    justify-content: center;
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 200;
+        margin-inline: 1rem;
+        color: vars.$sdBlack;
+        margin-bottom: 4rem;
+        @include mixins.sm {
+            font-size: 3.5rem;
+        }
+    }
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: vars.$sdBlack;
+    @include mixins.xs {
+            grid-column: 2/3;
+    
+        }
+}
+
+.our-way-articles {
+   display: grid;
+   gap: 4rem;
+
+    @include mixins.sm {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    
+        }
+
+
+                 @include mixins.lg {
+                    gap: 4rem;
+        
+                 }
+}
+
+
+.our-way-img {
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+
+    @include mixins.xs {
+            grid-row: 2/4;
+            width: 4rem;
+            height: 4rem;
+    
+        }
+}
+.our-way-article {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: 4rem 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    @include mixins.xs {
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: 2rem 1fr;
+    gap: 0;
+    column-gap: 1rem;
+    max-width: 60ch;
+        }
+   
+p {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    line-height: 1.8rem;
+   
+
+@include mixins.xs {
+        grid-column: 2/4;
+    }
+}
+}
+.our-way-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+}
+}
+
+.home-third-section {
+    background-color: vars.$black;
+    height: 95vh;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-position-y: 62%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+
+    @include mixins.xs {
+            height: 60vh;
+    }
+
+    h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-inline: 1rem;
+    color: vars.$sdWhite;
+
+    @include mixins.lg {
+        font-size: 3rem;
+        font-weight: 200;
+    }
+    }
+
+#btm-btn {
+    width: 8rem;
+    justify-self: center;
+
+}
+}

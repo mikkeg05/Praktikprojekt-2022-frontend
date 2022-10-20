@@ -1,0 +1,56 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+
+h1 {
+    font-family: vars.$displayfont;
+    font-size: 4rem;
+
+    @include mixins.xs {
+        font-size: 5rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: vars.$displayfont;
+
+    @include mixins.xs {
+        font-size: 3rem;
+    }
+}
+
+h3 {
+    font-family: vars.$paragraphfont;
+    font-size: 1.5rem;
+
+    @include mixins.xs {
+        font-size: 1.8rem;
+    }
+}
+
+h4 {
+    font-family: vars.$paragraphfont;
+    font-size: 1.2rem;
+
+    @include mixins.xs {
+            font-size: 1.4rem;
+        }
+
+}
+
+p {
+    font-family: vars.$paragraphfont;
+    font-size: 1rem;
+
+}
+
+a {
+    font-family: vars.$paragraphfont;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+button {
+    font-family: vars.$paragraphfont;
+
+}

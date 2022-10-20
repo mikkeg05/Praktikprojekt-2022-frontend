@@ -1,0 +1,150 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+
+#trashservice-header {
+    min-height: 40vh;
+    background-color: vars.$sdWhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-image: url('/trashser_splash.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-attachment: fixed;
+    
+
+    h1 {
+            font-size: 3rem;
+            color: vars.$white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            padding-inline: 1rem;
+            text-align: center;
+            margin-top: 4rem;
+            
+        @include mixins.sm {
+                font-size: 4rem;
+                margin-top: 0;
+            }
+        }
+}
+
+.trashservice-first-section {
+    background-color: #0C0C0C;
+    min-height: 60vh;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    
+    
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0C0C0C;
+    gap: 3rem;
+}
+
+    h2 {
+        font-size: 1.5rem;
+        color: vars.$sdWhite;
+        font-family: 'Montserrat', sans-serif;
+
+        @include mixins.sm {
+                font-size: 2rem;
+            }
+    }
+
+         h3 {
+             font-size: 1.2rem;
+             color: vars.$sdWhite;
+             font-family: 'Montserrat', sans-serif;
+    
+             @include mixins.sm {
+                 font-size: 1.5rem;
+             }
+         }
+    
+    .trashservice-checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 1rem;
+         margin-bottom: 2rem;
+    }
+
+    .withbag-form {
+        
+        @include mixins.xs {
+                margin-inline: 0;
+                min-width: 30rem;
+            }
+    }
+
+    .without-bag-grid {
+        @include mixins.xs {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+                min-width: 40rem;
+                justify-items: center;
+            }
+
+        @include mixins.md {
+                           
+                min-width: 50rem;
+                         }
+    }
+
+    .chakra-form {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .chakra-label {
+        color: vars.$sdWhite;
+        margin-top: 2rem;
+    }
+
+    .chakra-input {
+    max-width: 50rem;
+    background-color: vars.$sdWhite;
+    color: vars.$sdBlack;
+    }
+
+    .price-btn-cont {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 4rem;
+
+        @include mixins.xs {
+                gap: 4rem
+            }
+
+     
+
+    }
+
+    .trash-submit {
+        font-family: 'Montserrat', sans-serif;
+        width: 9rem;
+        height: 2.5rem;
+        color: vars.$white;
+        font-size: 1.1rem;
+        border-radius: 0.2rem;
+        
+    }
+
+    .ex-margin {
+        margin-top: 2rem;
+    }
+
+    p {
+        color: red;
+        margin-top: 1rem;
+    }
+
+}

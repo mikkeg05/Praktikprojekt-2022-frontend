@@ -1,0 +1,283 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+
+#webshop-main {
+overflow: hidden;
+overflow-x: hidden;
+}
+
+#webshop-header {
+    // background-image: url('/shop_splash.jpg');
+    background-color: vars.$black;
+    height: 110vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: 66% 10%;
+    background-position-y: 62%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+#webshop-header-content {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+    color: vars.$white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.landing-btn {
+    font-family: 'Montserrat', sans-serif;
+    width: 8rem;
+    height: 3rem;
+    color: vars.$white;
+    font-size: 1.1rem;
+    border-radius: 0.2rem;
+    font-weight: 400;
+
+    &:hover,
+        :focus {
+            box-shadow: 0 0.6em 0.5em -0.4em vars.$lightgreen;
+            transform: translateY(-0.25em);
+            background-color: vars.$lightgreen;
+            color: vars.$sdBlack;
+        }
+}
+
+.orange {
+&:hover,
+    :focus {
+        box-shadow: 0 0.6em 0.5em -0.4em vars.$lightorange;
+        background-color: vars.$lightorange;
+    }
+
+}
+
+
+}
+
+#webshop-first-section {
+ background-color: vars.$sdBlack;
+ min-height: 100vh;
+ padding-bottom: 4rem;
+
+ .textbox {
+    padding-block: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+ }
+
+h2 {
+        font-size: 3rem;
+        color: vars.$sdWhite;
+        font-weight: 300;
+}
+
+p {
+    margin-top: 1rem;
+    font-style: italic;
+    color: vars.$sdWhite;
+}
+//bag section
+.bag-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin-block: 4rem 2rem;
+
+}
+
+//bag article
+.bagitem {
+//border: solid 1px vars.$sdBlack;
+width: 16rem;
+height: 25rem;
+background-color: vars.$white;
+border-radius: 0.8rem;
+}
+
+.bag-img-container {
+    min-height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(243, 141, 16, 1) 100%);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+
+}
+
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.bag-title {
+    display: flex;
+    gap: 1rem;
+    padding-inline: 1rem;
+}
+.bag-text {
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+   
+}
+
+
+.buy-btn {
+    font-family: 'Montserrat', sans-serif;
+    height: 3rem;
+    color: vars.$sdBlack;
+    font-size: 1.1rem;
+    border-radius: 0.8rem;
+    font-weight: 500;
+    background-color: #38DF49;
+    // border: solid 1px vars.$sdBlack;
+    padding-right: 0.7rem;
+    -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    
+    &:hover {    
+        cursor: pointer;
+        box-shadow: 0 0.6em 0.5em -0.4em #8aff95;
+            transform: translateY(-0.25em);
+            background-color: #8aff95;
+        }
+}
+li {
+        font-family: 'Montserrat', sans-serif;
+}
+
+}
+
+#webshop-second-section {
+background-color: vars.$sdWhite;
+min-height: 100vh;
+padding-inline: 1rem;
+padding-block: 1rem;
+
+@include mixins.xs {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-block: 4rem;
+align-items: center;
+column-gap: 4rem;
+    }
+
+@include mixins.lg {
+column-gap: 10rem;
+}
+
+
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+        margin-block: 4rem 1rem;
+
+        @include mixins.xs {
+            margin-block: 1rem 1rem;
+            }
+        }
+
+.weight-text-con {
+   
+
+    @include mixins.xs {
+            display: flex;
+                flex-direction: column;
+                gap: 2rem;
+        }
+}
+    h3 {
+        font-size: 1.2rem;
+        font-style: italic;
+        text-align: center;
+        margin-block: 1.2rem 2rem;
+    }
+
+    //details text
+    .details-con {
+        display: grid;
+       justify-content: center;
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+    li {
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 2rem;
+    }
+
+    //sdweight image
+    .weight-img-cont {
+        display: grid;
+        justify-content: center;
+        background-color: vars.$sdWhite;
+        padding: 2rem;
+        margin-block: 2rem 1rem;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(243, 141, 16, 1) 100%);
+        border-radius: 0.8rem;
+    }
+    
+    //cta button
+
+.weight-btn-con {
+    display: flex;
+    margin-block: 2rem;
+    justify-content: center;
+}
+
+    .buy-btn {
+        font-family: 'Montserrat', sans-serif;
+            height: 3rem;
+            color: vars.$sdBlack;
+            font-size: 1.1rem;
+            border-radius: 0.8rem;
+            font-weight: 500;
+            background-color: #38DF49;
+            max-width: 100%;
+            min-width: 100%;
+            // border: solid 1px vars.$sdBlack;
+            padding-right: 0.7rem;
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+        
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 0.6em 0.5em -0.4em #8aff95;
+                transform: translateY(-0.25em);
+                background-color: #8aff95;
+            }
+
+                @include mixins.lg {
+                    max-width: 20rem;
+                    min-width: 20rem
+                }
+        }
+   
+
+}

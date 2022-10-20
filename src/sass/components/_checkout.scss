@@ -1,0 +1,523 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+
+.checkout-nav {
+    width: 100%;
+    background-color: vars.$sdBlack;
+    padding: 1rem;
+    padding-inline: 2rem;
+    padding-block: 0.5;
+
+.checkout-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+h1 {
+    font-size: 1.2rem;
+    color: vars.$sdWhite;
+}
+}
+
+#checkout-header {
+    display: grid;
+    min-height: 20vh;
+    justify-content: center;
+    align-items: center;
+
+    .breadcrumb ol {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        margin-inline: 1rem;
+
+    }
+
+    .breadcrumb-btn {
+        width: 8rem;
+        border-radius: 30rem;
+        font-size: 0.8rem;
+        height: 1.5rem;
+    }
+}
+
+#receipt-header {
+    min-height: 35vh;
+    background-color: vars.$sdBlack;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+
+.receipt-header-con {
+    a {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+   
+}
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+        color: vars.$sdWhite;
+
+        @include mixins.sm {
+                font-size: 3rem;
+            }
+    }
+}
+
+#checkout-main {
+    font-family: 'Montserrat', sans-serif;
+
+    .checkout-nav-btn {
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 4rem;
+    }
+}
+
+#step-container {
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        margin-block: 0 4rem;
+        font-weight: 300;
+        margin-inline: 1rem;
+
+        @include mixins.sm {
+                font-size: 3rem;
+                margin-block: 0 6rem;
+            }
+    }
+
+    //forms container
+    .info-form-cont {
+        padding-inline: 1rem;
+        padding-block: 2rem 3rem;
+        background-color: vars.$sdBlack;
+        color: vars.$sdWhite;
+        display: grid;
+        justify-content: center;
+        min-height: 40vh;
+    }
+
+    //first step
+    .info-form {
+        display: grid;
+        padding-inline: auto;
+        min-width: 16rem;
+
+        @include mixins.xs {
+            min-width: 35rem;
+        }
+    }
+
+    .info-chakra-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @include mixins.xs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .info-form-email {
+            grid-column: 1/3;
+        }
+
+    }
+
+    .info-input {
+        background-color: vars.$sdWhite;
+        color: vars.$sdBlack;
+        border-radius: 2px;
+
+        &:focus {
+            border: 1px solid vars.$orange;
+            box-shadow: 0 0 0 1px vars.$orange;
+            outline: vars.$orange;
+        }
+
+    }
+
+    .info-select {
+        color: vars.$sdBlack;
+    }
+
+    .info-select-label {
+        color: vars.$sdWhite;
+    }
+
+    //step 2
+    .date-form {
+        min-width: 20rem;
+        margin-top: 2rem;
+        display: grid;
+
+        input {
+            min-width: 20rem;
+            background-color: vars.$sdWhite;
+            color: vars.$sdBlack;
+            font-weight: 400;
+
+            &:focus {
+                    border: 1px solid vars.$orange;
+                    box-shadow: 0 0 0 1px vars.$orange;
+                    outline: vars.$orange;
+                }
+        }
+               
+    }
+
+    // step 3
+    .pay-form {
+        max-width: 40rem;
+        color: vars.$sdBlack;
+        border: none;
+
+        @include mixins.xs {
+                min-width: 30rem;
+        
+            }
+    
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+    }
+
+
+    .pay-btns {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 2px;
+        border-bottom: 1px solid vars.$sdBlack;
+        border-top: none;
+
+    }
+
+    .acoord-cont {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        align-items: center;
+    }
+    .acoord-cont-paygal {
+    padding: 1rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 5rem 1fr 5rem;
+    align-items: center;
+    justify-items: center;
+           
+    }
+
+    .paygal-btn {
+        font-family: 'Montserrat', sans-serif;
+        width: 7rem;
+        height: 2.5rem;
+        background-color: vars.$green;
+        color: white;
+        font-size: 0.9rem;
+        border-radius: 0.2rem;
+        font-weight: 400;
+        grid-column: 2/3;
+    }
+
+    .pay-input {
+        background-color: white;
+        border: solid 1px vars.$sdBlack;
+        border-radius: 2px;
+        height: 2.5rem;
+        padding-inline: 0.5rem;
+        margin: 0;
+        
+            &:focus {
+                border: 1px solid vars.$orange;
+                box-shadow: 0 0 0 1px vars.$orange;
+                outline: vars.$orange;
+            }
+    }
+.pay-form-card {
+    display: flex;
+    flex-direction: column;
+}
+    .card-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+        gap: 2rem;
+    }
+
+
+
+    //step 4
+    .confirmation {
+        background-color: vars.$sdBlack;
+        padding-inline: 1rem;
+        padding-block: 2rem;
+
+        @include mixins.xs {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+            }
+
+        @include mixins.xl {
+        padding-inline: 12rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: vars.$sdBlack;
+            margin-bottom: 1rem;
+
+        @include mixins.sm {
+                    font-size: 2rem;
+                    margin-block: 1.5rem;
+                
+                }
+        }
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        hr {
+        border-top: 1px solid vars.$sdBlack;
+        }
+    .confirmation-left {
+        @include mixins.sm {
+                min-width: 50vw;
+            }
+    }
+    }
+    .items-container {
+        background-color: vars.$sdWhite;
+        padding: 1rem;
+        border-radius: 2px;
+    }
+    .checkout-item {
+        color: vars.$sdBlack;
+        display: grid;
+        grid-template-columns: 10rem 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+        border-top: solid 1px vars.$sdBlack;
+        padding-top: 1rem;
+    }
+    .checkout-item-img {
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-bottom: 0.5rem;
+    
+            background: rgb(255, 255, 255);
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(243, 141, 16, 1) 100%);
+                border-radius: 0.8rem;
+    }
+    .checkout-item-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 10rem;
+
+    }
+
+    .item-price {
+        font-size: 1.6rem;
+        align-self: flex-end;
+        margin-bottom: 0;
+    }
+
+    .pickup-date-container, .pay-method-container {
+        background-color: vars.$sdWhite;
+        padding: 1rem;
+        border-radius: 2px;
+        margin-block: 2rem;
+          }
+    
+    .pay-content {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        p {
+            font-weight: 500;
+        }
+    }
+
+.price-container {
+    background-color: vars.$sdWhite;
+    padding: 1rem;
+    border-radius: 2px;
+    margin-block: 2rem;
+    display: grid;
+
+@include mixins.xs {
+       margin-block: 0 2rem;
+       position: sticky;
+       top: 6rem;
+    }
+@include mixins.md {
+    min-width: 25vw;
+}
+
+.price-list {
+    margin-block: 1.5rem;
+}
+
+.price-list-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-left: 0.2rem;
+
+}
+.total-container {
+    margin-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}
+.confirm-post-btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: vars.$green;
+    color: vars.$white;
+    font-size: 1.1rem;
+    border-radius: 0.2rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+}
+}
+.nav-btns {
+    display: flex;
+    justify-content: space-between;
+}
+.next-submit {
+    font-family: 'Montserrat', sans-serif;
+    width: 7rem;
+    height: 2.5rem;
+    background-color: vars.$green;
+    color: vars.$white;
+    font-size: 1.1rem;
+    border-radius: 0.2rem;
+    margin-top: 2rem;
+    justify-self: end;
+
+    &:disabled {
+        background-color: grey;
+        cursor: default;
+    }
+}
+#date-btn {
+    margin-top: 0;
+}
+.back-submit {
+    font-family: 'Montserrat', sans-serif;
+        width: 7rem;
+        height: 2.5rem;
+        background-color: grey;
+        color: vars.$white;
+        font-size: 1.1rem;
+        border-radius: 0.2rem;
+        justify-self: end;
+}
+}
+// receipt
+.receipt-back-btn {
+    background-color: transparent;
+}
+.receipt-section {
+    background-color: vars.$sdBlack;
+    display: flex;
+    justify-content: center;
+    padding-block: 0 6rem;
+    min-height: 65vh;
+
+.receipt {
+    background-color: vars.$sdWhite;
+    padding: 1rem;
+    border-radius: 0.8rem;
+
+    @include mixins.xs {
+            min-width: 32rem
+        }
+    }
+
+ h2 {
+        font-size: 2.5rem;
+
+ }  
+
+ h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+ }
+ .grey {
+    color: vars.$grey;
+ }
+.receipt-hr {
+    border-top: 1px solid vars.$sdBlack;
+    margin-block: 2rem 1.5rem;
+}
+.receipt-top {
+   display: grid;
+   margin-bottom: 1rem;
+}
+.receipt-date {
+    justify-self: flex-end;
+}
+.receipt-top-txt {
+    display: flex;
+    gap: 1rem;
+}
+
+.receipt-billing {
+    margin-block: 1rem;
+
+    p {
+        margin-bottom: 0.5rem;
+}
+
+}
+.receipt-item {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 2px;
+    margin-bottom: 1rem;
+}
+.receipt-item-col {
+    display: flex;
+    gap: 1rem;
+
+}
+.receipt-total {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+}
+
+}

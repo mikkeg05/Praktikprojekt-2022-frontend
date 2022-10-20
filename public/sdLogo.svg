@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 66 66" style="enable-background:new 0 0 66 66;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:url(#Planet_00000179638674427962942630000008554922973525903802_);}
+	.st3{fill:none;stroke:url(#Orbit_00000031918403009505746960000017059900142090746520_);stroke-miterlimit:10;}
+	.st4{fill:url(#Rocket_00000150079069767334357910000011941276671962773634_);}
+	.st5{fill:url(#Planet_00000136392871927901123630000011018103692893671091_);}
+	.st6{fill:none;stroke:url(#Orbit_00000091703960204949828960000004934663653805023925_);stroke-miterlimit:10;}
+	.st7{fill:url(#Rocket_00000065781905521692194500000003596686555651549342_);}
+	.st8{display:inline;fill:#AF5809;}
+	.st9{display:inline;fill:#FFE297;}
+	.st10{display:inline;fill:#F38D10;}
+	.st11{display:inline;fill:#03225D;}
+	.st12{display:inline;fill:#7EDBE9;}
+	.st13{display:inline;fill:#7DDAF7;}
+	.st14{display:inline;fill:#77D19C;}
+	.st15{display:inline;fill:#0B4924;}
+	.st16{display:inline;fill:#F4F4F4;}
+	.st17{display:inline;fill:#1E1E1E;}
+	.st18{display:inline;fill:#3A30A8;}
+</style>
+<g id="assets" class="st0">
+	<rect id="bg_00000136374478078703368890000010097551506839661199_" x="0.14" y="0.14" class="st1" width="65.86" height="65.86"/>
+</g>
+<g id="Small_gradient">
+	
+		<radialGradient id="Planet_00000029758498420620306580000010840402345245356183_" cx="39.7089" cy="28.0917" r="51.6321" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.0854" style="stop-color:#F38D10"/>
+		<stop  offset="0.1589" style="stop-color:#ED860F"/>
+		<stop  offset="0.2648" style="stop-color:#DC730D"/>
+		<stop  offset="0.3753" style="stop-color:#C35809"/>
+	</radialGradient>
+	
+		<circle id="Planet_00000137848240883975435410000013639139149596869051_" style="fill:url(#Planet_00000029758498420620306580000010840402345245356183_);" cx="33" cy="33.51" r="14.55"/>
+	
+		<linearGradient id="Orbit_00000150813550467169568970000014070698949332076941_" gradientUnits="userSpaceOnUse" x1="10.6804" y1="57.1503" x2="56.6385" y2="11.1923">
+		<stop  offset="0" style="stop-color:#C35809"/>
+		<stop  offset="0.5718" style="stop-color:#DD750D"/>
+		<stop  offset="1" style="stop-color:#F38D10"/>
+	</linearGradient>
+	
+		<path id="Orbit_00000142134249827379323920000018355216349819411635_" style="fill:none;stroke:url(#Orbit_00000150813550467169568970000014070698949332076941_);stroke-miterlimit:10;" d="
+		M4.13,19.73c-3.08,6.45-4.03,13.96-2.19,21.44C6.17,58.33,23.5,68.8,40.66,64.57s27.63-21.57,23.4-38.72
+		C59.83,8.7,42.5-1.78,25.34,2.45c-0.98,0.24-1.93,0.52-2.87,0.85"/>
+	
+		<linearGradient id="Rocket_00000034070431813419038770000006330033386800567997_" gradientUnits="userSpaceOnUse" x1="3.1739" y1="12.2575" x2="23.134" y2="11.3526">
+		<stop  offset="0.2851" style="stop-color:#C35809"/>
+		<stop  offset="0.5682" style="stop-color:#F38D10"/>
+		<stop  offset="0.761" style="stop-color:#F48E12"/>
+		<stop  offset="0.8546" style="stop-color:#F6921A"/>
+		<stop  offset="0.9268" style="stop-color:#F99827"/>
+		<stop  offset="0.9876" style="stop-color:#FEA139"/>
+		<stop  offset="1" style="stop-color:#FFA33E"/>
+	</linearGradient>
+	
+		<polygon id="Rocket_00000125601355273268974170000002152083894026274977_" style="fill:url(#Rocket_00000034070431813419038770000006330033386800567997_);" points="
+		3.18,12.48 10.35,12.02 8.51,18.96 13.71,12.1 13.72,12.08 19.41,4.58 10.94,8.7 10.92,8.71 	"/>
+</g>
+<g id="Layer_5" class="st0">
+</g>
+<g id="Large_gradient">
+</g>
+<g id="Samples" class="st0">
+</g>
+</svg>
